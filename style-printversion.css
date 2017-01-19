@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Aaux;
+    src: url(fonts/AauxPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url(fonts/BebasNeue.otf);
+}
+
+body {
+    background-color: 	#FFFFFF;
+}
+
+@page {
+  size: 		A4;
+  margin: 		0.5cm;
+}
+
+@page :left {
+  margin: 		0.5;
+}
+
+nav, aside {
+  display: none;
+}
+
+
+div.chapter {
+   page-break-before: always;
+}
+
+p {
+   page-break-inside: avoid;
+}
+
+img {
+	display: none;
+}
+
+/* -------! titlepage !------- */
+
+
+.titlepage-content {
+    font-family: 	Bebas Neue, sans-serif;
+    font-size:		25px;
+    text-align:		left;
+}
+
+#thesis-title {
+	display:		none;
+}
+
+/* -------! page numbers !------- */
+.pagenumber-container {
+	display:  		none
+}
+
+.print-pagenumber-container-left {
+	margin-left: 	8.7cm;
+	margin-right: 	auto;
+	position: 		fixed;
+	float: 			right;
+}
+
+.print-pagenumber-container-right {
+	margin-left: 	10.5cm;
+	margin-right: 	auto;
+	position: 		fixed;
+	float:		 	left;
+}
+
+.print-pagenumber-style {
+	font-family: 	Bebas Neue, sans-serif;
+	font-size:		110px;
+	color:			black;
+}
+
+
+
+
+
+/* -------! chapter texts !------- */
+#print-column {
+	-moz-column-count: 		2;
+	-webkit-column-count: 	2;
+	column-count: 			2;
+	column-gap: 			4.2cm;
+}
+
+.chapter-container {
+	width:			20.4cm;
+	height:			29.1cm;
+	position:		fixed;
+}
+
+.chapter-content {
+	float:left;
+}
+
+
+.chapter-title {
+	font-family:  	Aaux, sans-serif;
+	font-size:		12px;
+	text-decoration: underline;
+	text-transform: uppercase;	
+}
+
+.chapter-textstyle {
+	font-family: 	Aaux, sans-serif;
+	font-size: 		12px;
+}
+
+
+
+.menu-container {
+	display:		none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
